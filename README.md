@@ -12,7 +12,18 @@ Input: heights of trees below:
 
 Output:
 `169.375`
+answer:
+```swift
+var heightsOfTrees = [161, 182, 161, 154, 176, 170, 167, 171, 170, 174]
+var distinctHeightsOfTrees = Set(heightsOfTrees)
+var sum = 0
 
+for height in distinctHeightsOfTrees {
+    sum += height
+}
+
+print("The average height of the greenhouse plants are \(Double(sum)/Double(distinctHeightsOfTrees.count))")
+```
 
 ## Question 2
 
